@@ -10,9 +10,9 @@ function About() {
       <div className="flex h-[100%] flex-col justify-center gap-12 px-10 md:px-20 lg:mt-36 lg:flex-row">
         <div className="text-mostafa flex   flex-col font-semibold sm:text-xl">
           <span className="mb-4 leading-[1.6]">
-            Hello There! My Name Is Abdullah Moemen. My focus is on delivering
-            modern and responsive websites. Interested in performance and
-            applying best practices.
+            Hello There! My Name Is Abdullah Moemen. I am a front end developer,
+            My focus is on delivering modern and responsive websites. Interested
+            in performance and applying best practices.
           </span>
 
           <span className="mb-8 leading-[1.6]">
