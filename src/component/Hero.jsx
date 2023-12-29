@@ -1,23 +1,22 @@
 import myPic from "../../puplic/Group.png";
+import stars from "../images/stars.png";
 function Hero() {
   return (
-    <div className="mt-10 flex flex-grow flex-col items-center justify-center px-[10%]  md:px-[20%]  lg:flex-row lg:justify-between">
-      <div>
-        <h1 className="text-white mb-4 text-3xl font-bold leading-[1.2] md:text-5xl ">
-          Hello, my name is Abdullah Moemen
+    <div className=" mx-auto mt-10 flex w-[80%] flex-grow flex-col items-center justify-center gap-4  lg:flex-row lg:justify-between">
+      <div className="relative flex flex-col items-center justify-center">
+        <img className="absolute w-32  md:w-60" src={stars} alt="stars" />
+        <h1 className="mb-4 min-w-fit text-xl font-bold leading-[1.2] text-white sm:text-3xl md:text-4xl ">
+          Hello, I'm Abdullah Moemen
         </h1>
-        <p className="text-white leading-[1.8] opacity-75">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          consectetur quos veniam numquam inventore repudiandae saepe voluptas,
-          laborum ipsam ratione, eos dolor, vero doloribus itaque! Voluptate
-          temporibus iste quidem ducimus.
+        <p className="text-l leading-[1.8] tracking-[5px] text-white opacity-75 sm:text-xl sm:tracking-[10px]">
+          Front End Developer
         </p>
-        <button>Projects</button>
+        {/* <button>Projects</button> */}
       </div>
 
-      <div className="">
+      <div className="h-[20rem] md:h-[30rem]">
         {/* abdbadbda */}
-        <img className="" src={myPic} alt="aasaa" />
+        <img className="h-[100%]" src={myPic} alt="aasaa" />
       </div>
     </div>
   );

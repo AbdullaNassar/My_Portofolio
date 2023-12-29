@@ -1,15 +1,17 @@
 import "./App.css";
+import About from "./component/About";
 import Header from "./component/Header";
 import Hero from "./component/Hero";
 
 function App() {
   return (
-    <div className=" text-slate-200 bg-primary ">
+    <div className=" bg-primary text-slate-200 ">
       <div className="flex h-screen flex-col ">
         <Header />
         <Hero />
       </div>
-      {/* <h1>ghll</h1> */}
+
+      <About />
     </div>
   );
 }
