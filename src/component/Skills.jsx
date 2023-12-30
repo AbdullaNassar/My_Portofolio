@@ -7,9 +7,9 @@ import git from "../images/git.png";
 
 function Skills() {
   return (
-    <div className="">
+    <div className="mt-20">
       <Heading>My Skills</Heading>
-      <div className="grid-cols-skill mt-8 grid gap-8 sm:px-24">
+      <div className="grid-cols-skill mb-20 mt-8 grid gap-8 sm:px-24">
         <SkillItem
           name={"HTML"}
           srcImage="https://firebasestorage.googleapis.com/v0/b/photo-gallery-4a3be.appspot.com/o/icons8-html-5-100.png?alt=media&token=2445495f-7bf3-4f39-a49e-219164cd67a4"

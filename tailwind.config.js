@@ -16,7 +16,8 @@ export default {
 
       gridTemplateColumns: {
         edu: "auto 1fr",
-        skill: "repeat(auto-fit, minmax(270px,1fr))"
+        skill: "repeat(auto-fit, minmax(270px,1fr))",
+        project: "repeat(auto-fit,minmax(350px,1fr))",
       },
     },
   },
