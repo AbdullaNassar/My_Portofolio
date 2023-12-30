@@ -10,6 +10,13 @@ export default {
         yellowlight: "#FECD1A",
         mostafa: "#FDCB9E",
         mostafaSecond: "#6E7274",
+        primary2: "#195351",
+        skill: "#1D252A",
+      },
+
+      gridTemplateColumns: {
+        edu: "auto 1fr",
+        skill: "repeat(auto-fit, minmax(270px,1fr))"
       },
     },
   },

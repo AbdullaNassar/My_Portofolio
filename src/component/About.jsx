@@ -2,22 +2,22 @@ import paint from "../images/paint.png";
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import { FaSquareFacebook } from "react-icons/fa6";
-import { IoGitCommitOutline } from "react-icons/io5";
+import { IoBookOutline, IoGitCommitOutline } from "react-icons/io5";
+import Heading from "./Heading";
 function About() {
   return (
     <div className="min-h-screen">
-      <h1 className="relative mx-auto mt-8 w-fit border-b-2 border-b-yellow text-center  font-bold uppercase tracking-[5px] opacity-70 md:text-4xl">
-        <span className="block pb-2 ">About me</span>
-        <div className=" absolute left-[50%] top-[44px] h-[10px] w-[10px] translate-x-[-50%] rounded-[50%] bg-yellow"></div>
-        {/* <hr className="text-yellow" /> */}
-      </h1>
+      <Heading>About me</Heading>
 
-      <div className="mt-8 flex h-[100%] flex-col justify-center gap-12 px-10 md:px-20 lg:mt-12 lg:flex-row">
-        <div className="flex flex-col   font-semibold text-neutral-300 sm:text-xl">
+      <div className="mt-8 flex h-[100%] flex-col justify-center gap-12 px-10 md:px-20 lg:mt-12 lg:flex-row-reverse">
+        <div className="w-[100%]">
+          <img src={paint} alt="about me" />
+        </div>
+        <div className="flex flex-col  font-semibold text-neutral-300 sm:text-xl">
           <span className="mb-4 leading-[1.6]">
-            Hello There! My Name Is Abdullah Moemen. I am a front end developer,
-            My focus is on delivering modern and responsive websites. Interested
-            in performance and applying best practices.
+            I am a front end developer, My focus is on delivering modern and
+            responsive websites. Interested in performance and applying best
+            practices.
           </span>
 
           <span className="mb-8 leading-[1.6]">
@@ -64,10 +64,24 @@ function About() {
               </a>
             </div>
           </div>
-        </div>
 
-        <div className="w-[100%]">
-          <img src={paint} alt="about me" />
+          <div className="grid-cols-edu mb-8 mt-20 grid gap-x-6 gap-y-4 text-white">
+            <span className="bg-primary2 rounded-lg px-4 py-3 text-yellow">
+              <IoBookOutline />
+            </span>
+            <h2 className="text-lg font-semibold capitalize md:text-3xl">
+              education
+            </h2>
+
+            <div className="mt-4 h-2 w-2 justify-self-center rounded-[50%] bg-yellow"></div>
+            <div className="flex flex-col gap-2">
+              <h3>El-shrouk Academy</h3>
+              <span className="font-extralight text-yellow">2019-2023</span>
+              <p className="font-thin text-neutral-300 ">
+                Bachelor's degree in Computer Science
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
