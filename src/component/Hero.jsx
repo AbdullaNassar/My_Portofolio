@@ -14,7 +14,7 @@ function Hero() {
         {/* <button>Projects</button> */}
       </div>
 
-      <div className="animate-fade-in-right h-[20rem] md:h-[30rem]">
+      <div className="fade-in-right h-[20rem] md:h-[30rem]">
         {/* abdbadbda */}
         <img className="h-[100%]" src={myPic} alt="My Picture" />
       </div>
