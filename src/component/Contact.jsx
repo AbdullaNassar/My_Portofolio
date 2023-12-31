@@ -6,7 +6,7 @@ import contact2 from "../images/contact2.png";
 
 function Contact() {
   return (
-    <div className="mt-24 min-h-screen">
+    <div className="mt-24 min-h-screen" id="contact">
       <Heading>Contact</Heading>
       <div className="mt-12 flex flex-col justify-center px-4 sm:items-center">
         <label className="mt-4 flex min-w-[30%] items-center border-b-2 border-neutral-500 pb-2 pl-2 font-semibold">
@@ -31,9 +31,9 @@ function Contact() {
 
       <div className=" mt-20 flex flex-col justify-center gap-16 px-4 sm:px-24 md:flex-row">
         <div className="flex flex-col">
-          <h2 className="text-3xl font-bold md:text-4xl">Got a Project in</h2>
-          <span className="text-3xl font-bold text-yellow md:text-4xl">
-            mind?
+          <h2 className="text-3xl font-bold md:text-4xl">Feel free to</h2>
+          <span className="mt-2 text-3xl font-bold text-yellow md:text-4xl">
+            Contact me
           </span>
           <img
             className="w-[50%] self-end"
@@ -48,7 +48,7 @@ function Contact() {
                 Your name
               </label>
               <input
-                className="bg-primaryLight min-h-10 rounded-md px-2 py-1 text-neutral-300 focus:ring-1 focus:ring-yellow focus:ring-offset-2"
+                className="bg-primaryLight min-h-10 rounded-md px-2 py-1 text-neutral-300 focus:outline-none focus:ring-1 focus:ring-yellow focus:ring-offset-2"
                 id="name"
                 placeholder="Name"
               />
@@ -58,7 +58,7 @@ function Contact() {
                 Your Email
               </label>
               <input
-                className="bg-primaryLight min-h-10 rounded-md px-2 py-1 text-neutral-300 focus:ring-1 focus:ring-yellow focus:ring-offset-2"
+                className="bg-primaryLight min-h-10 rounded-md px-2 py-1 text-neutral-300 focus:outline-none focus:ring-1 focus:ring-yellow focus:ring-offset-2"
                 id="email"
                 type="email"
                 placeholder="Email"
@@ -70,11 +70,11 @@ function Contact() {
               Your Message
             </label>
             <textarea
-              className="bg-primaryLight min-h-28  flex-grow rounded-md px-2 py-1 text-neutral-300 focus:ring-1 focus:ring-yellow focus:ring-offset-2"
+              className="bg-primaryLight min-h-28 flex-grow  rounded-md px-2 py-1 text-neutral-300 focus:outline-none focus:ring-1 focus:ring-yellow focus:ring-offset-2"
               placeholder="Message"
             />
           </div>
-          <button className="mb-8 mt-4 self-start rounded-full bg-yellow px-4 py-2 font-semibold">
+          <button className="mb-8 mt-4 self-start rounded-full bg-yellow px-4 py-2 font-bold">
             Send Message
           </button>
         </form>

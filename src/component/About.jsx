@@ -6,7 +6,7 @@ import { IoBookOutline, IoGitCommitOutline } from "react-icons/io5";
 import Heading from "./Heading";
 function About() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" id="about">
       <Heading>About me</Heading>
 
       <div className="mt-8 flex h-[100%] flex-col justify-center gap-12 px-10 md:px-20 lg:mt-12 lg:flex-row-reverse">
@@ -65,8 +65,8 @@ function About() {
             </div>
           </div>
 
-          <div className="grid-cols-edu mb-8 mt-20 grid gap-x-6 gap-y-4 text-white">
-            <span className="bg-primary2 rounded-lg px-4 py-3 text-yellow">
+          <div className="mb-8 mt-20 grid grid-cols-edu gap-x-6 gap-y-4 text-white">
+            <span className="rounded-lg bg-primary2 px-4 py-3 text-yellow">
               <IoBookOutline />
             </span>
             <h2 className="text-lg font-semibold capitalize md:text-3xl">

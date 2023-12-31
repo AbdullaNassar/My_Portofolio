@@ -109,7 +109,7 @@ const projectsList = [
 ];
 function Projects() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" id="projects">
       <Heading>Projects</Heading>
       <div className="mt-20 grid grid-cols-project gap-y-8">
         {projectsList.map((project) => (
