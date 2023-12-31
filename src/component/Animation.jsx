@@ -1,8 +1,7 @@
-import contact2 from "../images/contact2.png";
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-function Heading({ children }) {
+function Animation({ children }) {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1, // Percentage of element's visibility required to trigger the animation
@@ -26,12 +25,8 @@ function Heading({ children }) {
       variants={animationVariants}
       transition={{ duration: 1 }} // Adjust the duration as per your preference
     >
-      <h1 className="relative mx-auto mt-8 w-fit border-b-2 border-b-yellow text-center  text-2xl font-bold uppercase tracking-[5px] opacity-70 sm:text-3xl md:text-4xl">
-        <span className="block pb-2 ">{children}</span>
-        <div className=" absolute left-[50%]  top-[36px] h-[10px] w-[10px] translate-x-[-50%] rounded-[50%] bg-yellow sm:top-[40px] md:top-[44px]"></div>
-        {/* <hr className="text-yellow" /> */}
-      </h1>
+      {children}
     </motion.div>
   );
 }
-export default Heading;
+export default Animation;

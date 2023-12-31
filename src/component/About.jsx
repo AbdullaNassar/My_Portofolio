@@ -4,9 +4,10 @@ import { SiLinkedin } from "react-icons/si";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { IoBookOutline, IoGitCommitOutline } from "react-icons/io5";
 import Heading from "./Heading";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Animation from "./Animation";
 function About() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
@@ -24,15 +25,16 @@ function About() {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={animationVariants}
-      transition={{ duration: 1 }} // Adjust the duration as per your preference
-    >
-      <div className="min-h-screen" id="about">
+    <div className="min-h-screen" id="about">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={animationVariants}
+        transition={{ duration: 1 }} // Adjust the duration as per your preference
+      >
         <Heading>About me</Heading>
+
         <div className="mt-8 flex h-[100%] flex-col justify-center gap-12 px-10 md:px-20 lg:mt-12 lg:flex-row-reverse">
           <div className="w-[100%]">
             <img src={paint} alt="about me" />
@@ -69,6 +71,7 @@ function About() {
               which allows me to approach challenges with an problem solver
               mindset, always striving for efficient solutions.
             </span>
+
             <div>
               <h2 className="mb-4 text-yellow opacity-80">
                 Connect With Me On My Socials!
@@ -100,28 +103,29 @@ function About() {
                 </a>
               </div>
             </div>
+            <Animation>
+              <div className="mb-8 mt-20 grid grid-cols-edu gap-x-6 gap-y-4 text-white">
+                <span className="rounded-lg bg-primary2 px-4 py-3 text-yellow">
+                  <IoBookOutline />
+                </span>
+                <h2 className="text-lg font-semibold capitalize md:text-3xl">
+                  education
+                </h2>
 
-            <div className="mb-8 mt-20 grid grid-cols-edu gap-x-6 gap-y-4 text-white">
-              <span className="rounded-lg bg-primary2 px-4 py-3 text-yellow">
-                <IoBookOutline />
-              </span>
-              <h2 className="text-lg font-semibold capitalize md:text-3xl">
-                education
-              </h2>
-
-              <div className="mt-4 h-2 w-2 justify-self-center rounded-[50%] bg-yellow"></div>
-              <div className="flex flex-col gap-2">
-                <h3>El-shrouk Academy</h3>
-                <span className="font-extralight text-yellow">2019-2023</span>
-                <p className="font-thin text-neutral-300 ">
-                  Bachelor's degree in Computer Science
-                </p>
+                <div className="mt-4 h-2 w-2 justify-self-center rounded-[50%] bg-yellow"></div>
+                <div className="flex flex-col gap-2">
+                  <h3>El-shrouk Academy</h3>
+                  <span className="font-extralight text-yellow">2019-2023</span>
+                  <p className="font-thin text-neutral-300 ">
+                    Bachelor's degree in Computer Science
+                  </p>
+                </div>
               </div>
-            </div>
+            </Animation>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
 
