@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-function Animation({ children }) {
+function Animation({ children, classes }) {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1, // Percentage of element's visibility required to trigger the animation
@@ -19,6 +19,7 @@ function Animation({ children }) {
   };
   return (
     <motion.div
+      className={classes}
       ref={ref}
       initial="hidden"
       animate={controls}
