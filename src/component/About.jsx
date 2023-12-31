@@ -4,94 +4,124 @@ import { SiLinkedin } from "react-icons/si";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { IoBookOutline, IoGitCommitOutline } from "react-icons/io5";
 import Heading from "./Heading";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 function About() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 0.1, // Percentage of element's visibility required to trigger the animation
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+  const animationVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
-    <div className="min-h-screen" id="about">
-      <Heading>About me</Heading>
-
-      <div className="mt-8 flex h-[100%] flex-col justify-center gap-12 px-10 md:px-20 lg:mt-12 lg:flex-row-reverse">
-        <div className="w-[100%]">
-          <img src={paint} alt="about me" />
-        </div>
-
-        <div className="flex flex-col  font-semibold text-neutral-300 sm:text-xl">
-          <span className="mb-4 leading-[1.6]">
-            I am a front end developer, My focus is on delivering modern and
-            responsive websites. Interested in performance and applying best
-            practices.
-          </span>
-
-          <span className="mb-8 leading-[1.6]">
-            Also, I'm Comptiteve Programmer, having a good foundation in data
-            structure, algorithms, and problem-solving, solving more than +1000
-            problems on{" "}
-            <a
-              className="hover:text-yellow3 text-yellow underline opacity-70"
-              href="https://codeforces.com/profile/abdallah_moemen"
-              target="_blank"
-            >
-              Codeforces
-            </a>{" "}
-            and{" "}
-            <a
-              className="hover:text-yellow3 text-yellow underline opacity-70"
-              href="https://leetcode.com/abdullah_Nassar/"
-              target="_blank"
-            >
-              Leetcode
-            </a>{" "}
-            which allows me to approach challenges with an problem solver
-            mindset, always striving for efficient solutions.
-          </span>
-          <div>
-            <h2 className="mb-4 text-yellow opacity-80">
-              Connect With Me On My Socials!
-            </h2>
-            <div className="text-y flex gap-4 text-2xl">
-              <a
-                className="hover:-translate-y-0.5 hover:text-yellow"
-                href="https://github.com/AbdullaNassar"
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
-              <a
-                className="hover:-translate-y-0.5 hover:text-yellow"
-                href="https://www.linkedin.com/in/abdallah-moemen/"
-                target="_blank"
-              >
-                <SiLinkedin />
-              </a>
-              <a
-                className="hover:-translate-y-0.5 hover:text-yellow"
-                href="https://www.facebook.com/abdallah.moemen.7/"
-                target="_blank"
-              >
-                <FaSquareFacebook />
-              </a>
-            </div>
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={animationVariants}
+      transition={{ duration: 1 }} // Adjust the duration as per your preference
+    >
+      <div className="min-h-screen" id="about">
+        <Heading>About me</Heading>
+        <div className="mt-8 flex h-[100%] flex-col justify-center gap-12 px-10 md:px-20 lg:mt-12 lg:flex-row-reverse">
+          <div className="w-[100%]">
+            <img src={paint} alt="about me" />
           </div>
 
-          <div className="mb-8 mt-20 grid grid-cols-edu gap-x-6 gap-y-4 text-white">
-            <span className="rounded-lg bg-primary2 px-4 py-3 text-yellow">
-              <IoBookOutline />
+          <div className="flex flex-col  font-semibold text-neutral-300 sm:text-xl">
+            <span className="mb-4 leading-[1.6]">
+              I am a front end developer, My focus is on delivering modern and
+              responsive websites. Interested in performance and applying best
+              practices.
             </span>
-            <h2 className="text-lg font-semibold capitalize md:text-3xl">
-              education
-            </h2>
 
-            <div className="mt-4 h-2 w-2 justify-self-center rounded-[50%] bg-yellow"></div>
-            <div className="flex flex-col gap-2">
-              <h3>El-shrouk Academy</h3>
-              <span className="font-extralight text-yellow">2019-2023</span>
-              <p className="font-thin text-neutral-300 ">
-                Bachelor's degree in Computer Science
-              </p>
+            <span className="mb-8 leading-[1.6]">
+              Also, I'm Comptiteve Programmer, having a good foundation in data
+              structure, algorithms, and problem-solving, solving more than
+              +1000 problems on{" "}
+              <a
+                className="text-yellow underline opacity-70 hover:text-yellow3"
+                href="https://codeforces.com/profile/abdallah_moemen"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Codeforces
+              </a>{" "}
+              and{" "}
+              <a
+                className="text-yellow underline opacity-70 hover:text-yellow3"
+                href="https://leetcode.com/abdullah_Nassar/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Leetcode
+              </a>{" "}
+              which allows me to approach challenges with an problem solver
+              mindset, always striving for efficient solutions.
+            </span>
+            <div>
+              <h2 className="mb-4 text-yellow opacity-80">
+                Connect With Me On My Socials!
+              </h2>
+              <div className="text-y flex gap-4 text-2xl">
+                <a
+                  className="hover:-translate-y-0.5 hover:text-yellow"
+                  href="https://github.com/AbdullaNassar"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  className="hover:-translate-y-0.5 hover:text-yellow"
+                  href="https://www.linkedin.com/in/abdallah-moemen/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SiLinkedin />
+                </a>
+                <a
+                  className="hover:-translate-y-0.5 hover:text-yellow"
+                  href="https://www.facebook.com/abdallah.moemen.7/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaSquareFacebook />
+                </a>
+              </div>
+            </div>
+
+            <div className="mb-8 mt-20 grid grid-cols-edu gap-x-6 gap-y-4 text-white">
+              <span className="rounded-lg bg-primary2 px-4 py-3 text-yellow">
+                <IoBookOutline />
+              </span>
+              <h2 className="text-lg font-semibold capitalize md:text-3xl">
+                education
+              </h2>
+
+              <div className="mt-4 h-2 w-2 justify-self-center rounded-[50%] bg-yellow"></div>
+              <div className="flex flex-col gap-2">
+                <h3>El-shrouk Academy</h3>
+                <span className="font-extralight text-yellow">2019-2023</span>
+                <p className="font-thin text-neutral-300 ">
+                  Bachelor's degree in Computer Science
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
