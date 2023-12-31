@@ -13,6 +13,7 @@ function About() {
         <div className="w-[100%]">
           <img src={paint} alt="about me" />
         </div>
+
         <div className="flex flex-col  font-semibold text-neutral-300 sm:text-xl">
           <span className="mb-4 leading-[1.6]">
             I am a front end developer, My focus is on delivering modern and

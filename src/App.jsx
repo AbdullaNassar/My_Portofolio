@@ -5,7 +5,8 @@ import Header from "./component/Header";
 import Hero from "./component/Hero";
 import Projects from "./component/Projects";
 import Skills from "./component/Skills";
-
+// import "react-awesome-reveal/dist/styles.css";
+import "wowjs/css/libs/animate.css";
 function App() {
   return (
     <div className=" bg-primary text-slate-200 ">
