@@ -74,7 +74,7 @@ function Contact() {
               placeholder="Message"
             />
           </div>
-          <button className="mb-8 mt-4 self-start rounded-full bg-yellow px-4 py-2 font-bold">
+          <button className="hover:bg-primaryDark mb-8 mt-4 self-start rounded-full bg-yellow px-4 py-2 font-bold">
             Send Message
           </button>
         </form>

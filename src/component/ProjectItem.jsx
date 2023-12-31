@@ -4,7 +4,7 @@ function ProjectItem({ srcImage, title, url, description, tags = [] }) {
       <img className="h-[200px] lg:h-[200px]" src={srcImage} alt="project1" />
       <div className="flex flex-grow flex-col justify-between">
         <div>
-          <h2 className="text-l mb-2 mt-2 pl-2 font-semibold text-yellow md:text-xl">
+          <h2 className="mb-2 mt-2 pl-2 text-xl font-semibold text-yellow md:text-2xl">
             {title}
           </h2>
           <p className="mb-4 pl-2">{description}</p>
@@ -24,7 +24,7 @@ function ProjectItem({ srcImage, title, url, description, tags = [] }) {
           href={url}
           target="_blank"
           rel="noreferrer"
-          className="mb-4 mt-4 self-center rounded-md bg-yellow px-4 py-3 pl-2 text-center font-semibold text-gray-900"
+          className="hover:bg-primaryDark mb-4 mt-4 self-center rounded-md bg-yellow px-4 py-3 pl-2 text-center font-bold text-white "
         >
           Go to {title} &rarr;
         </a>

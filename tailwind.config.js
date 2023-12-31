@@ -5,9 +5,11 @@ export default {
     extend: {
       colors: {
         primary: "#0E302F",
+        primaryDark:"#c18215",
         secondary: "#386261",
         yellow: "#FCB336",
         yellowlight: "#FECD1A",
+        yellow3:"#ffff20",
         mostafa: "#FDCB9E",
         mostafaSecond: "#6E7274",
         primary2: "#195351",

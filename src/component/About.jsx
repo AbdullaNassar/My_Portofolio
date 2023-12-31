@@ -25,7 +25,7 @@ function About() {
             structure, algorithms, and problem-solving, solving more than +1000
             problems on{" "}
             <a
-              className="text-yellow underline opacity-70"
+              className="hover:text-yellow3 text-yellow underline opacity-70"
               href="https://codeforces.com/profile/abdallah_moemen"
               target="_blank"
             >
@@ -33,7 +33,7 @@ function About() {
             </a>{" "}
             and{" "}
             <a
-              className="text-yellow underline opacity-70"
+              className="hover:text-yellow3 text-yellow underline opacity-70"
               href="https://leetcode.com/abdullah_Nassar/"
               target="_blank"
             >
@@ -47,16 +47,22 @@ function About() {
               Connect With Me On My Socials!
             </h2>
             <div className="text-y flex gap-4 text-2xl">
-              <a href="https://github.com/AbdullaNassar" target="_blank">
+              <a
+                className="hover:-translate-y-0.5 hover:text-yellow"
+                href="https://github.com/AbdullaNassar"
+                target="_blank"
+              >
                 <FaGithub />
               </a>
               <a
+                className="hover:-translate-y-0.5 hover:text-yellow"
                 href="https://www.linkedin.com/in/abdallah-moemen/"
                 target="_blank"
               >
                 <SiLinkedin />
               </a>
               <a
+                className="hover:-translate-y-0.5 hover:text-yellow"
                 href="https://www.facebook.com/abdallah.moemen.7/"
                 target="_blank"
               >
