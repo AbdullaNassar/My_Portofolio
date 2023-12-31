@@ -24,7 +24,7 @@ function Animation({ children, classes }) {
       initial="hidden"
       animate={controls}
       variants={animationVariants}
-      transition={{ duration: 1 }} // Adjust the duration as per your preference
+      transition={{ duration: 0.6 }} // Adjust the duration as per your preference
     >
       {children}
     </motion.div>

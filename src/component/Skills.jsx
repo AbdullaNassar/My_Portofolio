@@ -5,7 +5,6 @@ import tailwind from "../images/tailwind.png";
 import c from "../images/c.png";
 import git from "../images/git.png";
 
-
 function Skills() {
   return (
     <div>
