@@ -13,7 +13,7 @@ function Contact() {
           <span className="text-yellow">
             <FaLocationDot />
           </span>
-          : Egypt
+          : Cairo, egypt
         </label>
         <label className="mt-4 flex min-w-[30%] items-center border-b-2 border-neutral-500 pb-2 pl-2 font-semibold">
           <span className="text-yellow">
