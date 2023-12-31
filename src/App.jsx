@@ -10,7 +10,7 @@ import Skills from "./component/Skills";
 import "wowjs/css/libs/animate.css";
 function App() {
   return (
-    <div className=" bg-primary text-slate-200 ">
+    <div className="from-primaryLight2 bg-gradient-to-r to-primary text-slate-200 ">
       <div className="flex h-screen flex-col ">
         <Header />
         <Hero />

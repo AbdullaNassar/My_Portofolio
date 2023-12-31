@@ -6,6 +6,8 @@ export default {
       colors: {
         primary: "#0E302F",
         primaryDark: "#c18215",
+        primaryLight: "#1e5654",
+        primaryLight2: "#2b7572",
         secondary: "#386261",
         yellow: "#FCB336",
         yellowlight: "#FECD1A",
@@ -13,7 +15,7 @@ export default {
         mostafa: "#FDCB9E",
         mostafaSecond: "#6E7274",
         primary2: "#195351",
-        primaryLight: "#1e5654",
+
         skill: "#1D252A",
       },
 
