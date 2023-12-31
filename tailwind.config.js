@@ -11,6 +11,7 @@ export default {
         mostafa: "#FDCB9E",
         mostafaSecond: "#6E7274",
         primary2: "#195351",
+        primaryLight:"#1e5654",
         skill: "#1D252A",
       },
 
