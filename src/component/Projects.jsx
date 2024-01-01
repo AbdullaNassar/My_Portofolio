@@ -70,7 +70,7 @@ const projectsList = [
     srcImage: proj3,
     url: "https://abdo-blog.netlify.app/",
     description:
-      "A web page to add, search and delete blogs from your blog list. It is created using React.js and CSS modules",
+      "A web page to add, search and delete blogs from your blog list.",
     tags: [
       {
         tagName: "Javascript",
