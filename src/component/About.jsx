@@ -18,14 +18,15 @@ function About() {
 
           <div className="flex flex-col  font-semibold text-neutral-300 sm:text-xl">
             <span className="mb-4 leading-[1.6]">
-              I am a front end developer, My focus is on delivering modern and
-              responsive websites. Interested in performance and applying best
-              practices.
+              I am a full stack developer using MERN stack, My focus is on
+              delivering modern and responsive websites. Interested in
+              performance and applying best practices.
             </span>
 
             <span className="mb-8 leading-[1.6]">
               Also, I'm Comptiteve Programmer, having a good foundation in data
-              structure, algorithms, and problem-solving, solving more than
+              structure, algorithms, and problem-solving skills gained by
+              competing in top-tier competitions for 3+ years, solving more than
               +1000 problems on{" "}
               <a
                 className="text-yellow underline opacity-70 hover:text-yellow3"
@@ -89,11 +90,22 @@ function About() {
                 </h2>
 
                 <div className="mt-4 h-2 w-2 justify-self-center rounded-[50%] bg-yellow"></div>
-                <div className="flex flex-col gap-2">
+                <div className="mb-8 flex flex-col gap-2">
                   <h3>El-shrouk Academy</h3>
                   <span className="font-extralight text-yellow">2019-2023</span>
                   <p className="font-thin text-neutral-300 ">
                     Bachelor's degree in Computer Science
+                  </p>
+                </div>
+
+                <div className=" mt-8 h-2 w-2 justify-self-center rounded-[50%] bg-yellow"></div>
+                <div className="mt-4 flex flex-col gap-2">
+                  <h3>Informaion Technology Intsitute ITI</h3>
+                  <span className="font-extralight text-yellow">
+                    03/2025 - 07/2025
+                  </span>
+                  <p className="font-thin text-neutral-300 ">
+                    Intensive full stack web development using MERN stack
                   </p>
                 </div>
               </div>

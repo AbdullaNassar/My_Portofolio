@@ -2,7 +2,7 @@ import Animation from "./Animation";
 
 function ProjectItem({ srcImage, title, url, description, tags = [] }) {
   return (
-    <Animation classes=" flex w-[250px] flex-col justify-self-center overflow-hidden  rounded-md bg-primary2 lg:w-[350px]">
+    <Animation classes=" flex  flex-col justify-self-center overflow-hidden  rounded-md bg-primary2 lg:w-[350px]">
       {/* <div className=" flex w-[250px] flex-col justify-self-center overflow-hidden  rounded-md bg-primary2 lg:w-[350px]"> */}
       <img className="h-[200px] lg:h-[200px]" src={srcImage} alt="project1" />
       <div className="flex flex-grow flex-col justify-between">

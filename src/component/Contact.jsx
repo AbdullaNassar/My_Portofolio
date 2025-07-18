@@ -15,7 +15,7 @@ function Contact() {
             <span className="text-yellow">
               <FaLocationDot />
             </span>
-            : Cairo, egypt
+            : Cairo, Egypt
           </label>
           <label className="mt-4 flex min-w-[30%] items-center border-b-2 border-neutral-500 pb-2 pl-2 font-semibold">
             <span className="text-yellow">
@@ -27,7 +27,7 @@ function Contact() {
             <span className="text-yellow">
               <FaPhoneAlt />
             </span>
-            : +201063698275
+            : +201066130828
           </label>
         </div>
       </Animation>
